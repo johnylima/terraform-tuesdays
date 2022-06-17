@@ -11,7 +11,6 @@ terraform {
   }
 
   backend "azurerm" {
-
   }
 }
 
@@ -67,7 +66,7 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["10.32.0.0/24"]
 
   subnet {
-    name           = "web"
+    name           = "web-test"
     address_prefix = "10.32.0.0/24"
   }
 }
